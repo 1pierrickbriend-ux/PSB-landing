@@ -145,7 +145,16 @@ nav{
   filter:grayscale(.15);
 }
 .profile-name{font-family:var(--fd);font-size:clamp(38px,4.5vw,52px);line-height:1;margin-bottom:6px;}
-.profile-role{font-size:15px;color:var(--inkl);margin-bottom:36px;}
+.profile-role{font-size:15px;color:var(--inkl);margin-bottom:10px;}
+.profile-location{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:13px;color:var(--v);font-weight:600;
+  margin-bottom:30px;
+}
+.profile-location::before{
+  content:'';width:6px;height:6px;border-radius:50%;
+  background:var(--vlight);flex-shrink:0;
+}
 .profile-block{margin-bottom:28px;}
 .profile-block:last-child{margin-bottom:0;}
 .profile-block-label{
@@ -367,6 +376,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);}
       <div>
         <div class="profile-name">Pierrick Briend</div>
         <div class="profile-role">Préparateur physique — Fondateur PSB</div>
+        <div class="profile-location">Toulouse &amp; alentours</div>
 
         <div class="profile-block">
           <div class="profile-block-label">Parcours</div>
